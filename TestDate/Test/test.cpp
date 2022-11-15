@@ -52,3 +52,4 @@ TEST(TestDate, TestSubYear) {
 }
 // проверка gita
 // проверка git2
+// проверка unicode
