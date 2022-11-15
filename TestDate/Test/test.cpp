@@ -50,4 +50,4 @@ TEST(TestDate, TestSubYear) {
 	s.sub_year(5);
 	EXPECT_EQ(s.get_year(), 7);
 }
-
+// проверка gita
