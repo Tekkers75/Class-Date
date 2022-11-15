@@ -51,3 +51,4 @@ TEST(TestDate, TestSubYear) {
 	EXPECT_EQ(s.get_year(), 7);
 }
 // проверка gita
+// проверка git2
