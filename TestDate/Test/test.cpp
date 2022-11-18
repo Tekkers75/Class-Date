@@ -50,6 +50,6 @@ TEST(TestDate, TestSubYear) {
 	s.sub_year(5);
 	EXPECT_EQ(s.get_year(), 7);
 }
-// проверка gita
-// проверка git2
-// проверка unicode
+// РїСЂРѕРІРµСЂРєР° gita
+// РїСЂРѕРІРµСЂРєР° git2
+// РїСЂРѕРІРµСЂРєР° unicode2
