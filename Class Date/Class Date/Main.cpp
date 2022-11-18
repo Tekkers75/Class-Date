@@ -1,5 +1,5 @@
-п»ї/// @author РЎР°СЂР°РЅС‡РёРЅ Рљ.Рђ.
-/// РћСЃРЅРѕРІРЅР°СЏ РїСЂРѕРіСЂР°РјРјР° 
+/// @author Саранчин К.А.
+/// Основная программа 
 #include <iostream>
 #include <string.h>
 #include "Date.h"
@@ -11,7 +11,7 @@ int main() {
 	try {
 
 		
-		/// РњР°СЃСЃРёРІС‹ Р·Р°РґР°РЅРёРµ 5.. 
+		/// Массивы задание 5.. 
 		Date d1;
 		d1.set_date(25, 11, 1);
 		cout << d1.show_data() << endl;
@@ -52,5 +52,6 @@ int main() {
 
 
 
-//РЎРµСЂСЊРµР·РЅРѕСЃС‚СЊ	РљРѕРґ	РћРїРёСЃР°РЅРёРµ	РџСЂРѕРµРєС‚	Р¤Р°Р№Р»	РЎС‚СЂРѕРєР°	РЎРѕСЃС‚РѕСЏРЅРёРµ РїРѕРґР°РІР»РµРЅРёСЏ
-//РћС€РёР±РєР°		Р”Р°РЅРЅС‹Р№ РїСЂРѕРµРєС‚ СЃСЃС‹Р»Р°РµС‚СЃСЏ РЅР° РїР°РєРµС‚С‹ NuGet, РѕС‚СЃСѓС‚СЃС‚РІСѓСЋС‰РёРµ РЅР° СЌС‚РѕРј РєРѕРјРїСЊСЋС‚РµСЂРµ.РСЃРїРѕР»СЊР·СѓР№С‚Рµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РїР°РєРµС‚РѕРІ NuGet, С‡С‚РѕР±С‹ СЃРєР°С‡Р°С‚СЊ РёС….Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ СЃРј.РїРѕ Р°РґСЂРµСЃСѓ : http://go.microsoft.com/fwlink/?LinkID=322105. РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚ СЃР»РµРґСѓСЋС‰РёР№ С„Р°Р№Р»: ..\РљР»Р°СЃСЃ\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.5\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets.	Data_test	C:\Users\kosty\OneDrive\Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»\РЈС‡РµР±Р° РїРѕРїС‹С‚РєР° в„–2\2 РєСѓСЂСЃ\РћРћРџ\РџСЂРѕРіСЂР°РјРјС‹\Class popitka1\Class Date Test\Data_test\Data_test.vcxproj	121	
+//Серьезность	Код	Описание	Проект	Файл	Строка	Состояние подавления
+//Ошибка		Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере.Используйте восстановление пакетов NuGet, чтобы скачать их.Дополнительную информацию см.по адресу : http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: ..\Класс\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.5\build\native\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.targets.	Data_test	C:\Users\kosty\OneDrive\Рабочий стол\Учеба попытка №2\2 курс\ООП\Программы\Class popitka1\Class Date Test\Data_test\Data_test.vcxproj	121	
+/// Проверка кодировки

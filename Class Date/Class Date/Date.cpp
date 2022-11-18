@@ -162,7 +162,6 @@ std::string Date::show_data() {
 	return std::to_string(day) + " days  " + std::to_string(month) + " month  " + std::to_string(year) + " year  ";// +std::to_string(convert_date()) + " all day";
 }
 
-
-
+/// Проверка кодировки
 
 
