@@ -5,6 +5,7 @@
 #include "Date.h"
 #include <Windows.h>
 
+
 using namespace std;
 
 int main() 
@@ -42,8 +43,17 @@ int main()
 		int x4 = d3.convert_date();
 		cout << x4 << endl;
 
-		d3.sub_year(15);
+		d3.sub_year(1);
 		cout << d3.show_data() << endl;
+
+		Date d4;
+		d4.set_date(10, 5, 11);
+		d4.add_day(5);
+		d4.add_month(4);
+		d4.add_year(5);
+		d4.convert_date();
+		//int x5 = d4.convert_date();
+		cout << d4.show_data() << endl;
 	}
 	catch (invalid_argument e)
 	{
