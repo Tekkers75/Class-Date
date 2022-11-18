@@ -1,5 +1,5 @@
-/// @author Саранчин К.А.
-/// Реализация методов класса
+/// @author РЎР°СЂР°РЅС‡РёРЅ Рљ.Рђ.
+/// Р РµР°Р»РёР·Р°С†РёСЏ РјРµС‚РѕРґРѕРІ РєР»Р°СЃСЃР°
 
 #include <string>
 #include <stdexcept>
@@ -10,7 +10,7 @@ using namespace std;
 int Date::mm[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
 
 
-/// Дата
+/// Р”Р°С‚Р°
 Date::Date() {
 	day = 0; month = 0; year = 0;
 }
@@ -20,7 +20,7 @@ Date::Date(int d, int m, int y) {
 	set_day(d);
 };
 
-/// Перевод времени в дни 
+/// РџРµСЂРµРІРѕРґ РІСЂРµРјРµРЅРё РІ РґРЅРё 
 int Date::convert_date() {
 	int days = 0;
 
@@ -35,7 +35,7 @@ int Date::convert_date() {
 
 
 
-/// Преобразовать дни в дату 
+/// РџСЂРµРѕР±СЂР°Р·РѕРІР°С‚СЊ РґРЅРё РІ РґР°С‚Сѓ 
 void Date::set_date_in_day(int dd) {
 	int y = dd / 365;
 	set_year(y);
@@ -55,7 +55,7 @@ void Date::set_date_in_day(int dd) {
 	}
 }
 
-/// Задать дату
+/// Р—Р°РґР°С‚СЊ РґР°С‚Сѓ
 void Date::set_date(int d, int m, int y) {
 	set_day(d);
 	set_month(m);
@@ -65,13 +65,13 @@ void Date::set_date(int d, int m, int y) {
 
 
 
-/// Задать день 
+/// Р—Р°РґР°С‚СЊ РґРµРЅСЊ 
 void Date::set_day(int d) {
 	if ((d < 0) || (d > 31)) throw std::invalid_argument("invalid parameter: day");
 	day = d;
 }
 
-/// Задать месяц
+/// Р—Р°РґР°С‚СЊ РјРµСЃСЏС†
 void Date::set_month(int m) {
 
 	if ((m < 0) || (m > 11)) throw std::invalid_argument("invalid parameter: month");
@@ -86,22 +86,22 @@ void Date::set_month(int m) {
 	}
 }
 
-/// Задать год 
+/// Р—Р°РґР°С‚СЊ РіРѕРґ 
 void Date::set_year(int y) {
 	if (y < 0) throw std::invalid_argument("invalid parameter: year");
 	year = y;
 }
 
-///Получить дни
+///РџРѕР»СѓС‡РёС‚СЊ РґРЅРё
 int Date::get_day() const { return day; }
 
-///Получить месяца
+///РџРѕР»СѓС‡РёС‚СЊ РјРµСЃСЏС†Р°
 int Date::get_month() const { return month; }
 
-///Получить года
+///РџРѕР»СѓС‡РёС‚СЊ РіРѕРґР°
 int Date::get_year() const { return year; }
 
-/// Добавить дни
+/// Р”РѕР±Р°РІРёС‚СЊ РґРЅРё
 void Date::add_day(int d) {
 	if (d < 0) throw std::invalid_argument("Invalid parameter: seconds");
 	int d1 = this->convert_date();
@@ -110,7 +110,7 @@ void Date::add_day(int d) {
 	this->set_date_in_day(d1);
 }
 
-/// Удалить день
+/// РЈРґР°Р»РёС‚СЊ РґРµРЅСЊ
 void Date::sub_day(int d) {
 	if (d < 0) throw std::invalid_argument("Invalid parameter: seconds");
 	int d1 = this->convert_date();
@@ -119,7 +119,7 @@ void Date::sub_day(int d) {
 	this->set_date_in_day(d1);
 }
 
-/// Добавить месяц
+/// Р”РѕР±Р°РІРёС‚СЊ РјРµСЃСЏС†
 void Date::add_month(int m) {
 	if (m < 0) throw std::invalid_argument("invalid parameter: month");
 
@@ -132,7 +132,7 @@ void Date::add_month(int m) {
 		set_date(day, month + m, year);
 }
 
-/// Убрать месяц
+/// РЈР±СЂР°С‚СЊ РјРµСЃСЏС†
 void Date::sub_month(int m) {
 	if (m < 0) throw std::invalid_argument("invalid parameter: month");
 
@@ -145,25 +145,26 @@ void Date::sub_month(int m) {
 		set_date(day, month - m, year);
 }
 
-/// Добавить год
+/// Р”РѕР±Р°РІРёС‚СЊ РіРѕРґ
 void Date::add_year(int y) {
 	if (y < 0) throw std::invalid_argument("invalid parameter: month");
 	set_date(day, month, year + y);
 }
 
-/// Убрать год
+/// РЈР±СЂР°С‚СЊ РіРѕРґ
 void Date::sub_year(int y) {
 	if (y < 0) throw std::invalid_argument("invalid parameter: month");
 	if (year - y < 0) throw std::invalid_argument("invalid parameter: year < 0");
 	set_date(day, month, year - y);
 }
 
-/// Вывести дату в стандартном формате 
+/// Р’С‹РІРµСЃС‚Рё РґР°С‚Сѓ РІ СЃС‚Р°РЅРґР°СЂС‚РЅРѕРј С„РѕСЂРјР°С‚Рµ 
 std::string Date::show_data() {
 	return std::to_string(day) + " days  " + std::to_string(month) + " month  " + std::to_string(year) + " year  ";// +std::to_string(convert_date()) + " all day";
 }
 
-/// Проверка кодировки
-/// Проверка 1251
+/// РџСЂРѕРІРµСЂРєР° РєРѕРґРёСЂРѕРІРєРё
+/// РџСЂРѕРІРµСЂРєР° 1251
+/// РџСЂРѕРІРµСЂРєР° UNICODE
 
 
