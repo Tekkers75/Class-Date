@@ -54,6 +54,99 @@ int main()
 		d4.convert_date();
 		//int x5 = d4.convert_date();
 		cout << d4.show_data() << endl;
+
+
+		const int size = 10;
+		Date* arrDay = new Date[size];
+		Date* arrMonth = new Date[size];
+		Date* arrYear = new Date[size];
+		int m = 1;
+		int y = 1;
+		int mm1[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
+		
+		//for (int d = 1; d < size; d++) {
+		//	arrDay[d].set_day(d);
+		//	for (int y = 1; y < size; y++) {
+
+		//			arrYear[y].set_year(y);
+		//	}
+		//	//arrF[d].set_date(d, m, y);
+		//	
+		//	//y++;
+		//}
+		//
+		//for (int d = 1; d < size; d++){
+		//	arrDay[d].set_day(d);
+		//	for (int y = 1; y < size; y++)
+		//	{
+		//		arrYear[m].set_year(y);
+		//	}
+		//	arrYear[y].convert_date();
+		//	arrDay[d].convert_date();
+		//	
+		//	cout << "date mass: " << arrYear[y].show_data() << arrDay[d].show_data() << endl;
+		//	//cout << "date mass: " << arrDay[d].show_data() << endl;
+
+		//}
+
+		Date* arrD = new Date[size];
+		for (int d = 1; d < size; d++) {
+			arrD[d].set_date_in_day(d);
+			
+		}
+
+		for (int d = 1; d < size; d++)
+		{
+			cout << "Day mass: " << arrD[d].convert_date() << endl;
+			//cout <<  arrD[d].show_data() << endl;
+
+		}
+		
+		cout << endl << "Day[" << 3 << "]: " << arrD[3].get_day() << endl;
+
+		//int d_sum = arrD[3].add_day(5);
+		//cout << arrD[1].add_day(5);
+
+
+
+
+		/*/// Массив из объектов
+		const int size = 5;
+		Fraction* arrF = new Fraction[size];
+		int j = 2;
+
+		for (int i = 1; i < size; i++) { /// Задание значений объектов
+			arrF[i].initF(i, j);
+			j++;
+		}
+
+		for (int i = 1; i < size; i++) { /// Вывод объектов
+			cout << "fr[" << i << "] = " << arrF[i].stringFraction() << endl;
+		}
+
+		/// Вывод чистилеля 3-й дроби
+		cout << endl << "fr[" << 3 << "].numerator = " << arrF[3].getNumeratorF() << endl;
+		/// Сумма дробей
+		Fraction f_sum = arrF[3].addF(arrF[4]);
+		cout << endl << "f_sum = fr[" << 3 << "] + fr[" << 4 << "] = " + f_sum.stringFraction(); /// Вывод суммы дробей
+
+		delete[]arrF;/// Освобождение памяти
+
+
+
+		/// Массив из указателей на объекты
+		Fraction* aF[size];
+
+		for (int i = 1; i < size; i++) { /// Присваивание массиву aF указателей на массив arrF
+			aF[i] = &arrF[i];
+		}
+
+		for (int i = 1; i < size; i++) { /// Вывод числителей объектов через указатели
+			cout << endl << "aF[" << i << "].numerator = " << aF[i]->getNumeratorF() << endl;
+		}
+*/
+
+
 	}
 	catch (invalid_argument e)
 	{
