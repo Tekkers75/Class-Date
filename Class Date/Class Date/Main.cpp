@@ -7,7 +7,9 @@
 
 using namespace std;
 
-int main() {
+int main() 
+{
+	system("chcp 1251"); // проверка кодировки???
 	try {
 
 		
